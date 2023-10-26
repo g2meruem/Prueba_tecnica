@@ -1,5 +1,5 @@
-<div>
-  <label id="titulo-telefono">Número de telefono</label>
-  <input type="text" mask="(00) 0000 000" [(ngModel)]="number">
+<div class="vista1-container">
+  <label id="titulo-telefono">Número de teléfono</label>
+  <input type="text"  name="number" mask="(00) 0000 000" [(ngModel)]="number">
+  <button type="button" class="btn btn-primary" (click)="openModal()">Enviar</button>
 </div>
-
