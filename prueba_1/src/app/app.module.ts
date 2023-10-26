@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalContentComponent } from './modalcontent/modalcontent.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IgxGridModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -17,16 +19,17 @@ import { ModalContentComponent } from './modalcontent/modalcontent.component';
     Vista2Component,
     NavbarComponent,
     ModalContentComponent
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgbModule,
-
+    BrowserAnimationsModule,
+    IgxGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

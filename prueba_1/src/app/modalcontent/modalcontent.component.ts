@@ -8,8 +8,9 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class ModalContentComponent {
   @Input() data: any;
 
-  constructor(private activeModal: NgbActiveModal) {}
-
+  constructor(private activeModal: NgbActiveModal) {
+  }
+  
   closeModal() {
     this.activeModal.close();
   }

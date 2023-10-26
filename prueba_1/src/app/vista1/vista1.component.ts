@@ -9,7 +9,7 @@ import { ModalContentComponent } from '../modalcontent/modalcontent.component';
   styleUrls: ['./vista1.component.css']
 })
 export class Vista1Component {
-  public number = 1134903392;
+  public number = null;
   form: FormGroup;
 
   constructor(private fb: FormBuilder, private modalService: NgbModal) {
@@ -17,9 +17,10 @@ export class Vista1Component {
       number: null
     });
   }
-
+  
   openModal() {
-    console.log(this.form.value.number);
+    console.log("Abriendo la modal...");
+    console.log("Valor del número de teléfono:", this.form.value.number);
     const modalRef = this.modalService.open(ModalContentComponent);
     modalRef.componentInstance.data = { telefono: this.form.value.number };
   }

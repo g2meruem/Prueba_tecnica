@@ -1,15 +1,12 @@
-/* Estilo del contenedor del campo de entrada */
 .vista1-container {
     margin: 20px;
   }
   
-  /* Estilo de la etiqueta "Número de telefono" */
   #titulo-telefono {
     font-size: 18px;
     margin-bottom: 10px;
   }
   
-  /* Estilo del campo de entrada con la máscara */
   input[type="text"][mask] {
     width: 100%;
     padding: 10px;
@@ -18,12 +15,10 @@
     border-radius: 5px;
   }
   
-  /* Estilo del campo de entrada enfocado */
   input[type="text"][mask]:focus {
     border-color: #00f; /* Cambia el color del borde al enfocar */
   }
   
-  /* Estilo del campo de entrada con error */
   input[type="text"][mask].ng-invalid {
     border-color: #f00; /* Cambia el color del borde en caso de error */
   }
